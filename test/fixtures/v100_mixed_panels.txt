@@ -1,0 +1,45 @@
+<PS configuration V0.7>
+<ProjectInformation>
+ CustomerName:Old Customer
+ Address:Old Street 1
+</ProjectInformation>
+<Panel-05>
+ Location: Lobby
+ Module: 2M
+ <Switch>
+	SW-01,LAMP,1
+	SW-02,FAN-ON/OFF,1
+ </Switch>
+ <Output>
+	OD-01,RLY,LAMP,1,0
+	OD-02,RLY,THERMOSTAT-VALV,1,0
+ </Output>
+</Panel-05>
+<Panel-07>
+ Location: Kitchen
+ Module: 2M
+ <Switch>
+	SW-01,LAMP,9
+ </Switch>
+ <Output>
+	OD-01,RLY,LAMP,9,0
+ </Output>
+</Panel-07>
+<InputAssign-03>
+	IP-01,DIGITAL-LATCH,HIGH,LAMP,1,ON-L-1,0,OFF
+</InputAssign-03>
+<Welcome>
+	OD-01,dimmer,1,on_l3,,panel_5
+</Welcome>
+<Connectivity>
+ MQTTBrokerAddress,10.0.0.5
+ <WiFiInfo-01>
+  <WiFi-config>
+   Mode,Mqtt-HA
+   MQTTPort,1883
+  </WiFi-config>
+  <WiFi-parameter>
+   LAMP,1,1
+  </WiFi-parameter>
+ </WiFiInfo-01>
+</Connectivity>

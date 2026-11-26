@@ -1,0 +1,42 @@
+<PS configuration V0.7>
+<ProjectInformation>
+ CustomerName:Bench mesh4
+ Address:Keetronics bench
+</ProjectInformation>
+<Panel-01>
+ Location: Bench
+ Module: 2M
+ <Switch>
+	SW-01,LAMP,1
+	SW-02,LAMP,2
+	SW-03,LAMP,3
+	SW-04,LAMP,4
+	SW-05,SCENE,1
+ </Switch>
+ <Output>
+	OD-01,RLY,LAMP,1,0
+	OD-02,RLY,LAMP,2,0
+	OD-03,RLY,LAMP,3,0
+	OD-04,RLY,LAMP,4,0
+ </Output>
+</Panel-01>
+<Welcome>
+	OD-01,lamp,1,on,,panel_1
+	OD-02,lamp,2,on,,panel_1
+	OD-03,lamp,3,on,,panel_1
+	OD-04,lamp,4,on,,panel_1
+</Welcome>
+<Connectivity>
+ <WiFiInfo-01>
+  <WiFi-config>
+   Mode,Tuya-BLE
+   PID,
+  </WiFi-config>
+  <WiFi-parameter>
+   LAMP,1,1
+   LAMP,2,2
+   LAMP,3,3
+   LAMP,4,4
+  </WiFi-parameter>
+ </WiFiInfo-01>
+</Connectivity>

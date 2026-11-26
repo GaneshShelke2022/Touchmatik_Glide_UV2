@@ -1,0 +1,47 @@
+# glide_mesh4.expect - Touchmatik Glide 1.1.0 golden (GA-1, 15-Oct-2026)
+# Glide 1.1.0's output for test/fixtures/bench_mesh4.txt: the program of TST/bench/bench_mesh4.hex
+# (Tuya-BLE = BLE Mesh 0x33, lamps 1..4, DP map lamp n -> n). It decodes like bench_mesh4.hex
+# except mqtt[1] (Glide writes the panel number); it has no all-zero records, so 8, not 22.
+# Words: config_store.c arrays (cfg_action_array, cfg_output_array, cfg_input_array,
+# cfg_scene_array, cfg_mqtt_array, cfg_mqtt_parameter_array); every word not listed is 0.
+# Read by test/converter_golden_test.dart, TST/app/check_app_golden.py and twin X18.
+records=8
+crc=D7FD3095
+panel=1
+board=1
+word action 0 0001
+word action 1 0001
+word action 2 0001
+word action 3 0002
+word action 4 0001
+word action 5 0003
+word action 6 0001
+word action 7 0004
+word action 8 0010
+word action 9 8101
+word output 0 0011
+word output 1 0001
+word output 4 0011
+word output 5 0002
+word output 8 0011
+word output 9 0003
+word output 12 0011
+word output 13 0004
+word scene 0 0001
+word scene 1 00FF
+word scene 2 0002
+word scene 3 00FF
+word scene 4 0003
+word scene 5 00FF
+word scene 6 0004
+word scene 7 00FF
+word mqtt 0 0033
+word mqtt 1 0001
+word param 0 0001
+word param 1 0001
+word param 2 0002
+word param 3 0002
+word param 4 0003
+word param 5 0003
+word param 6 0004
+word param 7 0004

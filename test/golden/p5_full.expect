@@ -1,0 +1,129 @@
+# p5_full.expect - Touchmatik Glide 1.1.0 golden (GA-1, 15-Oct-2026)
+# Glide 1.1.0's output for test/fixtures/p5_full.txt (STANDALONE): panel 5; inputs DIMMER,
+# ON-L-3, TOGGLE, ON-L-10 at 0x4200; THERMOSTAT-VALV -> 74; scenes with on_l5 / on_l3 and a set
+# point; a 45-character broker; a password with a comma; DP map with SCENE, BELL (01), id 300.
+# Words: config_store.c arrays (cfg_action_array, cfg_output_array, cfg_input_array,
+# cfg_scene_array, cfg_mqtt_array, cfg_mqtt_parameter_array); every word not listed is 0.
+# Read by test/converter_golden_test.dart, TST/app/check_app_golden.py and twin X18.
+records=22
+crc=E39E7FDA
+panel=5
+board=1
+broker=broker-01.keetronics-automation.example.co.in
+user=kipl_user
+port=8883
+word action 0 0001
+word action 1 0001
+word action 2 0006
+word action 3 5101
+word action 4 0015
+word action 5 6102
+word action 6 0010
+word action 7 8103
+word action 8 0011
+word action 9 7101
+word action 10 0004
+word action 11 4101
+word action 12 0003
+word action 13 0302
+word action 14 0017
+word action 15 8104
+word action 16 0001
+word action 17 00FF
+word action 18 0002
+word action 19 0201
+word output 0 0011
+word output 1 0001
+word output 4 0011
+word output 5 7401
+word output 8 0022
+word output 9 6102
+word output 12 0011
+word output 13 4101
+word output 14 0046
+word output 16 0011
+word output 17 5101
+word output 20 0011
+word output 21 7301
+word output 22 FFFF
+word input 0 110D
+word input 1 00FF
+word input 2 0015
+word input 3 6102
+word input 4 0003
+word input 5 000A
+word input 16 220D
+word input 18 0001
+word input 19 0003
+word input 20 0011
+word input 22 00FF
+word input 32 110D
+word input 33 00FF
+word input 34 0005
+word input 35 4201
+word input 36 00FF
+word input 37 012C
+word input 38 000A
+word scene 0 0001
+word scene 1 00FF
+word scene 2 6102
+word scene 3 0005
+word scene 4 5101
+word scene 5 0003
+word scene 32 7101
+word scene 33 18FF
+word scene 34 4201
+word scene 35 00FF
+word scene 40 0004
+word mqtt 0 0011
+word mqtt 1 0005
+word mqtt 8 6222
+word mqtt 9 6F72
+word mqtt 10 656B
+word mqtt 11 2D72
+word mqtt 12 3130
+word mqtt 13 6B2E
+word mqtt 14 6565
+word mqtt 15 7274
+word mqtt 16 6E6F
+word mqtt 17 6369
+word mqtt 18 2D73
+word mqtt 19 7561
+word mqtt 20 6F74
+word mqtt 21 616D
+word mqtt 22 6974
+word mqtt 23 6E6F
+word mqtt 24 652E
+word mqtt 25 6178
+word mqtt 26 706D
+word mqtt 27 656C
+word mqtt 28 632E
+word mqtt 29 2E6F
+word mqtt 30 6E69
+word mqtt 31 0022
+word mqtt 40 3822
+word mqtt 41 3838
+word mqtt 42 2233
+word mqtt 48 6B22
+word mqtt 49 7069
+word mqtt 50 5F6C
+word mqtt 51 7375
+word mqtt 52 7265
+word mqtt 53 0022
+word mqtt 64 5022
+word mqtt 65 2C61
+word mqtt 66 7373
+word mqtt 67 7720
+word mqtt 68 726F
+word mqtt 69 2364
+word mqtt 70 2231
+word param 0 0001
+word param 1 0001
+word param 2 8103
+word param 3 0014
+word param 4 0102
+word param 5 0007
+word param 6 5201
+word param 7 0004
+word param 8 6202
+word param 9 012C

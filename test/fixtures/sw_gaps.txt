@@ -1,0 +1,12 @@
+<PS configuration V0.7>
+<Panel-02>
+ Location: Bedroom
+ Module: 2M
+ <Switch>
+	SW-01,LAMP,1
+	SW-03,LAMP,3
+	SW-05,SCENE,2
+ </Switch>
+</Panel-02>
+<Connectivity>
+</Connectivity>
